@@ -18,7 +18,7 @@
       "title": "ポケモン種族値当てクイズ",
       "description": "ReactとPokeAPI、Goで作ったクイズ！これを使えば君もポケモンマスターに一歩近づける！？",
       "image": "https://placehold.co/400x250/FF1493/FF1493",
-      "link": "https://pokequiz-status.netlify.app/",
+      "link": "https://pokequiz-front.onrender.com",
       "tags": ["React", "Node.js", "Go", "PokeAPI"]
     },
     {
