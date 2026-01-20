@@ -2,7 +2,7 @@
 import { defineConfig } from 'astro/config';
 
 import react from '@astrojs/react';
-import vercel from '@astrojs/vercel/server'; // Import the Vercel adapter
+import vercel from '@astrojs/vercel'; // Corrected import for the Vercel adapter
 
 import tailwindcss from '@tailwindcss/vite';
 
