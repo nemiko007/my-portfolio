@@ -1,7 +1,7 @@
 {
   "name": "nemi",
   "tagline": "みんなにハッピーを届けるWebクリエイター！💖",
-  "profileImage": "./src/data/nemiko.png",
+  "profileImage": "/nemiko.png",
   "socialLinks": [
     {
       "platform": "GitHub",
