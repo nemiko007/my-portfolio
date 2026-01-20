@@ -1,45 +1,33 @@
 {
-  "name": "ギャル子",
+  "name": "nemi",
   "tagline": "みんなにハッピーを届けるWebクリエイター！💖",
-  "profileImage": "https://via.placeholder.com/150/FF69B4/FFFFFF?text=GYARUKO",
+  "profileImage": "src/data/nemiko.png",
   "socialLinks": [
     {
       "platform": "GitHub",
-      "url": "https://github.com/gyaruko"
-    },
-    {
-      "platform": "LinkedIn",
-      "url": "https://linkedin.com/in/gyaruko"
+      "url": "https://github.com/nemiko007"
     },
     {
       "platform": "Twitter",
-      "url": "https://twitter.com/gyaruko"
+      "url": "https://twitter.com/nemiko007"
     }
   ],
   "projects": [
     {
       "id": 1,
-      "title": "キラキラWebアプリ",
-      "description": "ReactとNode.jsで作った、マジ卍なWebアプリ！リアルタイム更新が超アガる！",
+      "title": "ポケモン種族値当てクイズ",
+      "description": "ReactとPokeAPI、Goで作ったクイズ！これを使えば君もポケモンマスターに一歩近づける！？",
       "image": "https://via.placeholder.com/400x250/FF1493/FFFFFF?text=Project+1",
-      "link": "#",
-      "tags": ["React", "Node.js", "MongoDB", "Realtime"]
+      "link": "https://pokequiz-status.netlify.app/",
+      "tags": ["React", "Node.js", "Go", "PokeAPI"]
     },
     {
       "id": 2,
-      "title": "映え画像ジェネレーター",
-      "description": "D3.jsとAstroで開発！複雑なデータも一瞬で映え画像に変身！",
+      "title": "mp3アップローダー Soundlike",
+      "description": "AstroとGo、Firebaseで作った爆速mp3アップローダー！音楽好き必見！",
       "image": "https://via.placeholder.com/400x250/FFC0CB/FFFFFF?text=Project+2",
-      "link": "#",
-      "tags": ["Astro", "D3.js", "DataViz", "Performance"]
-    },
-    {
-      "id": 3,
-      "title": "モバイルファーストECサイト",
-      "description": "Next.jsとTailwind CSSで爆速UX！スマホからでも爆買い余裕！",
-      "image": "https://via.placeholder.com/400x250/FF69B4/FFFFFF?text=Project+3",
-      "link": "#",
-      "tags": ["Next.js", "Tailwind CSS", "E-commerce", "Mobile-first"]
+      "link": "https://frontend-pbcz.onrender.com/",
+      "tags": ["Astro", "Go", "Firebase"]
     }
   ]
 }
