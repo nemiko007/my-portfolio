@@ -1,16 +1,32 @@
 ---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.jsx';
+import Hero from '../components/Hero.jsx';
+import Projects from '../components/Projects.jsx';
+import Footer from '../components/Footer.jsx';
+import Contact from '../components/Contact.jsx';
 
+const contactStatus = Astro.url.searchParams.get('contact');
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="My Portfolio">
+  <Header client:load />
+  <main>
+    <Hero client:load />
+    <Projects client:load />
+    
+    {contactStatus === 'success' && (
+      <div id="contact-status" class="text-center p-4 mb-4 text-lg font-bold text-green-700 bg-green-100 rounded-lg max-w-2xl mx-auto">
+        メッセージありがと！確認して返信するね！
+      </div>
+    )}
+    {contactStatus === 'error' && (
+      <div id="contact-status" class="text-center p-4 mb-4 text-lg font-bold text-red-700 bg-red-100 rounded-lg max-w-2xl mx-auto">
+        ごめん、送信に失敗しちゃった💦 もう一回試してみて！
+      </div>
+    )}
+
+    <Contact client:load />
+  </main>
+  <Footer client:load />
+</Layout>
