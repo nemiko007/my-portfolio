@@ -19,7 +19,7 @@
       "description": "ReactとPokeAPI、Goで作ったクイズ！これを使えば君もポケモンマスターに一歩近づける！？",
       "image": "https://placehold.co/400x250/FF1493/FF1493",
       "link": "https://pokequiz-front.onrender.com",
-      "tags": ["React", "Go", "API"]
+      "tags": ["React", "Go", "API", "PostgreSQL"]
     },
     {
       "id": 2,
