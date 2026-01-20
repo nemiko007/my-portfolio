@@ -11,7 +11,7 @@ import profileData from '../data/profile.json'; // Import profile data
 const contactStatus = Astro.url.searchParams.get('contact');
 ---
 
-<Layout title="My Portfolio">
+<Layout title="nemi's Portfolio">
   <Header client:load />
   <main>
     <Hero client:load profile={profileData} />
