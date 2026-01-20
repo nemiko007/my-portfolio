@@ -19,7 +19,7 @@
       "description": "ReactとPokeAPI、Goで作ったクイズ！これを使えば君もポケモンマスターに一歩近づける！？",
       "image": "https://placehold.co/400x250/FF1493/FF1493",
       "link": "https://pokequiz-front.onrender.com",
-      "tags": ["React", "Node.js", "Go", "API"]
+      "tags": ["React", "Go", "API"]
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
       "description": "AstroとGo、Firebaseで作った爆速mp3アップローダー！音楽好き必見！",
       "image": "https://placehold.co/400x250/FFC0CB/FFC0CB",
       "link": "https://frontend-pbcz.onrender.com/",
-      "tags": ["Astro", "React", "Node.js", "Go", "Firebase"]
+      "tags": ["Astro", "React", "TailwindCSS", "Go", "Firebase"]
     }
   ]
 }
