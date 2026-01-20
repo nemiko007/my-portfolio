@@ -17,7 +17,7 @@
       "id": 1,
       "title": "ポケモン種族値当てクイズ",
       "description": "ReactとPokeAPI、Goで作ったクイズ！これを使えば君もポケモンマスターに一歩近づける！？",
-      "image": "https://placehold.co/400x250/FF1493/FFFFFF",
+      "image": "https://placehold.co/400x250/FF1493/FF1493",
       "link": "https://pokequiz-status.netlify.app/",
       "tags": ["React", "Node.js", "Go", "PokeAPI"]
     },
@@ -25,7 +25,7 @@
       "id": 2,
       "title": "mp3アップローダー Soundlike",
       "description": "AstroとGo、Firebaseで作った爆速mp3アップローダー！音楽好き必見！",
-      "image": "https://placehold.co/400x250/FFC0CB/FFFFFF",
+      "image": "https://placehold.co/400x250/FFC0CB/FFC0CB",
       "link": "https://frontend-pbcz.onrender.com/",
       "tags": ["Astro", "Go", "Firebase"]
     }
