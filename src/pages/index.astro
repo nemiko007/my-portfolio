@@ -6,14 +6,16 @@ import Projects from '../components/Projects.jsx';
 import Footer from '../components/Footer.jsx';
 import Contact from '../components/Contact.jsx';
 
+import profileData from '../data/profile.json'; // Import profile data
+
 const contactStatus = Astro.url.searchParams.get('contact');
 ---
 
 <Layout title="My Portfolio">
   <Header client:load />
   <main>
-    <Hero client:load />
-    <Projects client:load />
+    <Hero client:load profile={profileData} />
+    <Projects client:load projects={profileData.projects} />
     
     {contactStatus === 'success' && (
       <div id="contact-status" class="text-center p-4 mb-4 text-lg font-bold text-green-700 bg-green-100 rounded-lg max-w-2xl mx-auto">
@@ -28,5 +30,5 @@ const contactStatus = Astro.url.searchParams.get('contact');
 
     <Contact client:load />
   </main>
-  <Footer client:load />
+  <Footer client:load socialLinks={profileData.socialLinks} />
 </Layout>
