@@ -1,42 +1,23 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.jsx';
-import Hero from '../components/Hero.jsx';
-import Projects from '../components/Projects.jsx';
-import Footer from '../components/Footer.jsx';
-import Contact from '../components/Contact.jsx';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.jsx";
+import Hero from "../components/Hero.jsx";
+import Projects from "../components/Projects.jsx";
+import Footer from "../components/Footer.jsx";
+import Contact from "../components/Contact.jsx";
 
-import profileData from '../data/profile.json'; // Import profile data
+import profileData from "../data/profile.json"; // Import profile data
 
-const contactStatus = Astro.url.searchParams.get('contact');
+const contactStatus = Astro.url.searchParams.get("contact");
 ---
 
 <Layout title="nemi's Portfolio">
-  <Header client:load />
-  <main>
-    <Hero client:load profile={profileData} />
-    <Projects client:load projects={profileData.projects} />
-    
-    <Contact client:load />
+    <Header client:load />
+    <main>
+        <Hero client:load profile={profileData} />
+        <Projects client:load projects={profileData.projects} />
 
-    {contactStatus === 'success' && (
-      <div id="contact-status" class="flex items-center justify-center gap-4 mb-8 max-w-2xl mx-auto px-4">
-        <img src={profileData.profileImage} alt={profileData.name} class="w-16 h-16 rounded-full object-cover border-2 border-pink-500 shadow-md" />
-        <div class="relative bg-green-100 text-green-800 p-4 rounded-2xl shadow-sm">
-          <div class="absolute left-0 top-1/2 -ml-2 w-4 h-4 bg-green-100 transform rotate-45"></div>
-          <p class="text-lg font-bold relative z-10">メッセージありがと！確認して返信するね！</p>
-        </div>
-      </div>
-    )}
-    {contactStatus === 'error' && (
-      <div id="contact-status" class="flex items-center justify-center gap-4 mb-8 max-w-2xl mx-auto px-4">
-        <img src={profileData.profileImage} alt={profileData.name} class="w-16 h-16 rounded-full object-cover border-2 border-pink-500 shadow-md" />
-        <div class="relative bg-red-100 text-red-800 p-4 rounded-2xl shadow-sm">
-          <div class="absolute left-0 top-1/2 -ml-2 w-4 h-4 bg-red-100 transform rotate-45"></div>
-          <p class="text-lg font-bold relative z-10">ごめん、送信に失敗しちゃった💦 もう一回試してみて！</p>
-        </div>
-      </div>
-    )}
-  </main>
-  <Footer client:load socialLinks={profileData.socialLinks} />
+        <Contact client:load />
+    </main>
+    <Footer client:load socialLinks={profileData.socialLinks} />
 </Layout>
