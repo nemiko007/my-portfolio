@@ -19,7 +19,12 @@
       "description": "ReactとPokeAPI、Goで作ったクイズ！これを使えば君もポケモンマスターに一歩近づける！？",
       "image": "https://placehold.co/400x250/FF1493/FF1493",
       "link": "https://pokequiz-front.onrender.com",
-      "tags": ["React", "Go", "API", "PostgreSQL"]
+      "tags": [
+        "React",
+        "Go",
+        "API",
+        "PostgreSQL"
+      ]
     },
     {
       "id": 2,
@@ -27,7 +32,28 @@
       "description": "AstroとGo、Firebaseで作った爆速mp3アップローダー！音楽好き必見！",
       "image": "https://placehold.co/400x250/FFC0CB/FFC0CB",
       "link": "https://frontend-pbcz.onrender.com/",
-      "tags": ["Astro", "React", "TailwindCSS", "Go", "Firebase"]
+      "tags": [
+        "Astro",
+        "React",
+        "TailwindCSS",
+        "Go",
+        "Firebase"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "積読煽りアプリ 積読キラー",
+      "description": "本を登録して、LINEで読書をリマインド！",
+      "image": "https://placehold.co/400x250/FF1493/FF1493",
+      "link": "https://liff.line.me/2008948547-cGpAsaua",
+      "tags": [
+        "LINE",
+        "React",
+        "TailwindCSS",
+        "Go",
+        "Firebase",
+        "Cron-job"
+      ]
     }
   ]
 }
